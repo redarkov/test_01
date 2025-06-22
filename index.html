@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    hello
+    <div id="products-list" class="products">
+      
+    </div>
+
+    <div class="add-product">
+      <input placeholder="title" id="product-title"/>
+      <input placeholder="price" type="number" id="product-price"/>
+      <button onclick="onCreate()">Create</button>
+    </div>
+    <div id="update-form"></div>
+
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide-item">Slide 1</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-item">Slide 2</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-item">Slide 3</div>
+        </div>
+
+      </div>
+      
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</body>
+
+<style>
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+}
+.swiper-slide-item {
+  color: black;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 12px;
+  display: flex;
+   justify-content: space-between;
+
+}
+
+.card .title {
+  font-size: 20px;
+  counter-reset: blue;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  
+}
+
+</style>
+<script src="./script.js"></script>
+</html>
